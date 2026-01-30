@@ -1,6 +1,4 @@
-```swift
-Welcome to my Github account , I'm an iOS Engineer with 9+ years of experience building scalable, user-focused mobile applications.
-```
+I'm an iOS Engineer with 9+ years of experience building scalable, user-focused mobile applications.
 
 ## 🚀 Contributions
 
