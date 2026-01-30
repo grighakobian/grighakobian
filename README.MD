@@ -1,6 +1,8 @@
-Welcome to my Github account, I'm an iOS Engineer with 9+ years of experience building scalable, user-focused mobile applications.
+```swift
+Welcome to my Github account , I'm an iOS Engineer with 9+ years of experience building scalable, user-focused mobile applications.
+```
 
-##  Contributions
+## 🚀 Contributions
 
  - [swift-pagination](https://github.com/grighakobian/swift-pagination) — An easy-to-use API for implementing infinite scrolling in your applications
  - [swift-toolkit](https://github.com/readium/swift-toolkit) — A toolkit for ebooks, audiobooks and comics written in Swift
