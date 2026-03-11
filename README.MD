@@ -2,7 +2,6 @@
 
 **Senior iOS Engineer | 10+ Years of Experience**
 **Core Contributor to High-Impact Apps (35M+ Users)**
-Based in Yerevan, Armenia
 
 I am an experienced iOS software engineer and core contributor to high-impact mobile applications. I specialize in modernizing legacy codebases, designing scalable architectures, and delivering polished, user-centric products under extreme uncertainty.
 
