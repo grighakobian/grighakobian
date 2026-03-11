@@ -1,17 +1,49 @@
-I'm an iOS Engineer with 9+ years of experience building scalable, user-focused mobile applications.
+# 👋 Hi, I'm Grig
 
-## 🚀 Contributions
+**Senior iOS Engineer | 10+ Years of Experience**
+**Core Contributor to High-Impact Apps (35M+ Users)**
+Based in Yerevan, Armenia
 
- - [swift-pagination](https://github.com/grighakobian/swift-pagination) — An easy-to-use API for implementing infinite scrolling in your applications
- - [swift-toolkit](https://github.com/readium/swift-toolkit) — A toolkit for ebooks, audiobooks and comics written in Swift
- - [APNSwift](https://github.com/grighakobian/APNSwift) — Apple Push Notification Service built with swift
- - [packages](https://github.com/packagesdev/packages) — Integrated Packaging Environment for OS X
- 
-## 📱 My own apps
+I am an experienced iOS software engineer and core contributor to high-impact mobile applications. I specialize in modernizing legacy codebases, designing scalable architectures, and delivering polished, user-centric products under extreme uncertainty.
 
-- [APNSPro](https://apps.apple.com/am/app/apns-pro/id6482355487) — A macՕS app for testing push notifications.
+---
 
-## 📫 Get in Touch
+### 🛠 Technical Expertise
 
-- [LinkedIn](https://linkedin.com/in/grighakobian) 
-- [Email](grighakobian@gmail.com)
+* **Languages:** Swift, Objective-C, C++, Kotlin
+* **Architecture:** TCA (The Composable Architecture), MVVM, Clean Swift (VIP), MVC
+* **UI Frameworks:** SwiftUI, UIKit, Texture
+* **Reactive Programming:** RxSwift, Combine
+* **Persistence:** SwiftData, CoreData, Realm, GRDB, SQLite
+* **CI/CD & Tools:** GitHub Actions, Xcode Cloud, Fastlane, Bitrise
+* **Cross-Platform:** Kotlin Multiplatform (KMP)
+
+---
+
+### 🚀 Professional Impact
+
+* **Bokus AB (Senior iOS Engineer):** Led the phased modernization of a massive legacy codebase, migrating to SwiftUI + TCA. Designed a flexible subscription system and architected a state-driven Bookshelf with a robust background download engine.
+* **IdealMatch Inc. (iOS Engineer):** Core engineer for an AI-powered dating app with 4M verified members. Architected a real-time chat system using Twilio Conversations SDK and optimized performance through data-driven profiling.
+* **SoloLearn Inc. (iOS Engineer):** Key contributor to the largest social network for programming learners (35M+ users). Unified multiple iOS applications into a single cohesive platform and improved global onboarding and engagement.
+
+---
+
+### 📦 Open Source & Contributions
+
+* **[swift-pagination](https://github.com/grighakobian/swift-pagination)** – Author: An easy-to-use API for implementing infinite scrolling in Swift applications.
+* **[Readium Swift Toolkit](https://github.com/readium/swift-toolkit)** – Contributor: Implemented advanced e-book reader features and stability fixes.
+* **[APNSwift](https://github.com/kylebrowning/APNSwift)** – Contributor: High-performance Apple Push Notification service.
+* **[packages](https://github.com/packagesdev/packages)** – Contributor: Integrated Packaging Environment for macOS.
+
+---
+
+### 📱 My Apps
+
+* **[APNSPro](https://apps.apple.com/am/app/apns-pro/id6482355487)** – A dedicated macOS utility for developers to test and debug push notifications.
+
+---
+
+### 📫 Get in Touch
+
+* **LinkedIn:** [linkedin.com/in/grighakobian](https://linkedin.com/in/grighakobian)
+* **Email:** [grighakobian@gmail.com](mailto:grighakobian@gmail.com)
