@@ -32,6 +32,7 @@ I am an experienced iOS software engineer and core contributor to high-impact mo
 * **[swift-pagination](https://github.com/grighakobian/swift-pagination)** – Author: An easy-to-use API for implementing infinite scrolling in Swift applications.
 * **[Readium Swift Toolkit](https://github.com/readium/swift-toolkit)** – Contributor: Implemented advanced e-book reader features and stability fixes.
 * **[APNSwift](https://github.com/kylebrowning/APNSwift)** – Contributor: High-performance Apple Push Notification service.
+* **[AnyCodable](https://github.com/Flight-School/AnyCodable)** – Contributor: Type-erased wrappers for Encodable, Decodable, and Codable values.
 * **[packages](https://github.com/packagesdev/packages)** – Contributor: Integrated Packaging Environment for macOS.
 
 ---
