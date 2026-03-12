@@ -3,27 +3,19 @@
 **Senior iOS Engineer | 10+ Years of Experience**
 **Core Contributor to High-Impact Apps (35M+ Users)**
 
-I am an experienced iOS software engineer and core contributor to high-impact mobile applications. I specialize in modernizing legacy codebases, designing scalable architectures, and delivering polished, user-centric products under extreme uncertainty.
+I am an experienced iOS software engineer and core contributor to high-impact mobile applications. I specialize in modernizing legacy codebases, designing scalable architectures, and delivering polished, user-centric products with seamless user experiences.
 
 ---
 
 ### 🛠 Technical Expertise
 
 * **Languages:** Swift, Objective-C, C++, Kotlin
-* **Architecture:** TCA (The Composable Architecture), MVVM, Clean Swift (VIP), MVC
+* **Architecture:** TCA, MVVM, Clean Swift, MVC
 * **UI Frameworks:** SwiftUI, UIKit, Texture
 * **Reactive Programming:** RxSwift, Combine
 * **Persistence:** SwiftData, CoreData, Realm, GRDB, SQLite
 * **CI/CD & Tools:** GitHub Actions, Xcode Cloud, Fastlane, Bitrise
 * **Cross-Platform:** Kotlin Multiplatform (KMP)
-
----
-
-### 🚀 Professional Impact
-
-* **Bokus AB (Senior iOS Engineer):** Led the phased modernization of a massive legacy codebase, migrating to SwiftUI + TCA. Designed a flexible subscription system and architected a state-driven Bookshelf with a robust background download engine.
-* **IdealMatch Inc. (iOS Engineer):** Core engineer for an AI-powered dating app with 4M verified members. Architected a real-time chat system using Twilio Conversations SDK and optimized performance through data-driven profiling.
-* **SoloLearn Inc. (iOS Engineer):** Key contributor to the largest social network for programming learners (35M+ users). Unified multiple iOS applications into a single cohesive platform and improved global onboarding and engagement.
 
 ---
 
