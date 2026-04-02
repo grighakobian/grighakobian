@@ -34,8 +34,3 @@ I am an experienced iOS software engineer and core contributor to high-impact mo
 * **[APNSPro](https://apps.apple.com/am/app/apns-pro/id6482355487)** – A dedicated macOS utility for developers to test and debug push notifications.
 
 ---
-
-### 📫 Get in Touch
-
-* **LinkedIn:** [linkedin.com/in/grighakobian](https://linkedin.com/in/grighakobian)
-* **Email:** [grighakobian@gmail.com](mailto:grighakobian@gmail.com)
