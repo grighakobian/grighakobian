@@ -1,0 +1,9 @@
+# GitHub Pages / Jekyll configuration
+# A supported theme is applied to Markdown pages that use a layout.
+# The custom React portfolio in index.html is served as-is (no front matter),
+# so this theme has no effect on the homepage — it's ready for any future
+# Markdown pages (e.g. a blog post or an /about page).
+theme: jekyll-theme-cayman
+
+title: Grigor Hakobyan
+description: Senior iOS Engineer — Swift, SwiftUI, TCA, Kotlin Multiplatform.
