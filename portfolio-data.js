@@ -1,0 +1,286 @@
+// Portfolio content — Grigor Hakobyan
+
+window.PORTFOLIO = {
+  name: 'Grigor Hakobyan',
+  role: 'Senior iOS Engineer',
+  location: 'Yerevan, Armenia',
+  available: true,
+  email: 'grighakobian@gmail.com',
+  phone: '+374 96 56 59 56',
+  links: {
+    github: 'https://github.com/grighakobian',
+    linkedin: 'https://linkedin.com/in/grighakobian',
+  },
+  tagline: 'I build polished iOS apps that millions of people actually use.',
+  blurb: 'Ten years shipping iOS — from a learning app with 35M users to audiobooks, dating, and everything fiddly in between. I like the boring parts: making legacy code modern, downloads that resume, and players that just work.',
+
+  stats: [
+    { value: 50, suffix: 'M+', label: 'People reached', sub: 'SoloLearn — featured on Apple Today' },
+    { value: 10, suffix: ' yrs', label: 'Shipping iOS', sub: 'Swift & Objective-C, since iOS 8' },
+    { value: 12, suffix: '', label: 'Apps shipped at scale', sub: 'Audiobooks · dating · learning · dev tools' },
+    { value: 1, suffix: '', label: 'Indie product, solo', sub: 'APNS Pro — live on the Mac App Store' },
+  ],
+
+  about: {
+    p1: "I'm Grigor — an iOS engineer who's spent the last decade making apps feel right. The kind of right where the audio doesn't skip, the chat scrolls smoothly, the download resumes after a tunnel, and you don't notice the engineering because you're too busy enjoying the thing.",
+    p2: "I came up through SoloLearn helping unify a fragmented learning experience for 35 million people. Then years on a dating app where edge cases live or die by your handling of them. Now I'm wrapping up four years at Bokus rebuilding their audiobook stack from the ground up — three architectures deep, and every migration paid for itself.",
+    p3: "Outside work I play chess, make electronic music in my home studio, read more than I should, and walk the hills around Yerevan when my back tells me to.",
+  },
+
+  hobbies: [
+    { label: 'Chess', symbol: '♞' },
+    { label: 'Electronic music', symbol: '♪' },
+    { label: 'Reading', symbol: '✦' },
+    { label: 'Hiking', symbol: '△' },
+  ],
+
+  inspiration: {
+    lead: "Solving hard problems is the part of engineering everyone expects me to love — and I do. But on iOS, that's only half the job. The other half is feel: how every screen moves, the real physics in a scroll, the spring and bounce, the new fluidity of Liquid Glass. Matching that bar inside your own app is the craft I keep chasing.",
+    leadEmphasis: 'The other half is feel',
+    facets: [
+      { k: 'Liquid Glass', v: "Apple's material language — translucent, fluid, light bending as you move. A higher visual bar that still has to feel native, never gimmicky." },
+      { k: 'Physics, not keyframes', v: 'Motion driven by velocity, mass and tension — not hardcoded curves. Interactions that answer how you actually moved, not a fixed timeline.' },
+      { k: 'Springs & bounce', v: 'The rubber-band at the end of a scroll, the settle of a sheet, the little bounce that tells your hand the gesture landed. Small things, enormous difference.' },
+      { k: 'A standard you keep', v: 'When the system itself moves like liquid and glass, anything static in your app feels broken. The platform sets the bar — your job is to hold it everywhere.' },
+    ],
+  },
+
+  projects: [
+    {
+      id: 'apnspro',
+      iconId: 'icon-apnspro',
+      company: 'APNS Pro',
+      role: 'Indie · Solo developer',
+      period: '2024 — now',
+      tagline: 'A native Mac app for testing & optimizing push notifications.',
+      summary: 'My own product, live on the Mac App Store. A focused developer tool for crafting, validating and sending APNs payloads across iOS and macOS — designed, built, and shipped solo.',
+      tags: ['Swift', 'SwiftUI', 'TCA', 'macOS', 'APNs'],
+      platform: 'mac',
+      shots: ['Payload composer', 'Live preview'],
+      accent: '#d2a8ff',
+      highlights: [
+        'Designed and built end-to-end as a solo indie product on the Mac App Store',
+        'Real-time notification preview — check look & feel before going live',
+        'Custom payload editor with validation for complex push scenarios',
+        'Drag-and-drop testing flow; multi-app management UI',
+        'Sends to both iOS and macOS targets with consistent delivery',
+      ],
+      metric: { value: 'Live', label: 'on the Mac App Store' },
+      url: 'https://apps.apple.com/am/app/apns-pro/id6482355487',
+    },
+    {
+      id: 'bokus',
+      iconId: 'icon-bokus',
+      company: 'Bokus Play',
+      role: 'Senior iOS Engineer · Core',
+      period: '2022 — 2026',
+      tagline: 'Audiobooks & e-books, modernized from the inside out.',
+      summary: 'Drove the phased modernization of a long-lived codebase across three architectures, while shipping the features readers actually use every day — subscriptions, bookshelves, players, readers.',
+      tags: ['Swift', 'SwiftUI', 'TCA', 'UIKit', 'RxSwift', 'MVVM', 'Realm', 'Readium'],
+      platform: 'ios',
+      shots: ['Audio player', 'Bookshelf', 'Reader', 'Subscriptions'],
+      accent: '#3fb950',
+      highlights: [
+        'Migrated legacy UIKit + RxSwift → Clean Swift → MVVM + SwiftUI with TCA',
+        'Designed subscription system: Preview, Base, Premium, Family, time-based',
+        'Built state-driven Bookshelf with resumable background downloads',
+        'Redesigned audio player for stable online + offline playback',
+        'Shipped advanced e-book reader using Readium Swift Toolkit, including LCP',
+        'Contributed to shared Kotlin Multiplatform business logic',
+      ],
+      metric: { value: '3', label: 'arch migrations, zero rewrites' },
+      url: 'https://apps.apple.com/pt/app/bokus-play-ljudb%C3%B6cker-e-b%C3%B6cker/id1338795624',
+    },
+    {
+      id: 'iris',
+      iconId: 'icon-iris',
+      company: 'iris dating',
+      role: 'Core iOS Engineer',
+      period: '2019 — 2022',
+      tagline: 'AI-matched dating for 4 million verified members.',
+      summary: 'Core engineer at a Forbes/TechCrunch-featured dating startup. Built scalable features end-to-end, with the kind of edge-case handling that keeps a social product alive.',
+      tags: ['Swift', 'SwiftUI', 'TCA', 'UIKit', 'RxSwift', 'MVVM', 'CoreData', 'StoreKit'],
+      platform: 'ios',
+      shots: ['Discover', 'Chat', 'Profile', 'Match'],
+      accent: '#ff8fa3',
+      highlights: [
+        'Architected scalable features with MVVM + RxSwift + modular SwiftUI/TCA flows',
+        'Designed real-time chat on Twilio Conversations — smooth scroll, robust state',
+        'Optimized performance, responsiveness, engagement via Amplitude + Firebase',
+        'Mentored juniors through pair programming and architecture walkthroughs',
+      ],
+      metric: { value: '4M', label: 'verified members' },
+      url: 'https://apps.apple.com/us/app/iris-dating-let-ai-find-match/id1446249319',
+    },
+    {
+      id: 'sololearn',
+      iconId: 'icon-sololearn',
+      company: 'SoloLearn',
+      role: 'iOS Engineer',
+      period: '2016 — 2019',
+      tagline: "The world's largest social network for learning to code.",
+      summary: "Featured on Apple's Today section. I helped unify SoloLearn's separate iOS apps into one cohesive product serving 35M+ global learners.",
+      tags: ['Swift', 'UIKit', 'Objective-C', 'MVC', 'CoreData'],
+      platform: 'ios',
+      shots: ['Lesson', 'Code playground', 'Feed', 'Profile'],
+      accent: '#58a6ff',
+      highlights: [
+        'Key contributor unifying separate iOS apps into one scalable codebase',
+        'Shipped onboarding, content consumption, and engagement features',
+        'Refined navigation, interactions, accessibility across the app',
+      ],
+      metric: { value: '35M+', label: 'learners worldwide' },
+      url: 'https://apps.apple.com/us/app/sololearn-learn-to-code/id1210079064',
+    },
+  ],
+
+  experience: [
+    {
+      company: 'Bokus AB',
+      role: 'Senior iOS Engineer',
+      location: 'Yerevan (Remote)',
+      period: 'Jan 2022 — Jan 2026',
+      blurb: 'Phased modernization of a large legacy codebase; subscriptions, bookshelf, audio player, e-book reader.',
+    },
+    {
+      company: 'IdealMatch Inc.',
+      role: 'iOS Engineer',
+      location: 'Yerevan',
+      period: 'Jun 2019 — Jan 2022',
+      blurb: 'Core iOS at iris dating — features, real-time chat, performance, mentoring.',
+    },
+    {
+      company: 'SoloLearn Inc.',
+      role: 'iOS Engineer',
+      location: 'Yerevan',
+      period: 'Feb 2016 — May 2019',
+      blurb: 'Unified the iOS apps into one product; shipped features for 35M+ learners.',
+    },
+    {
+      company: "Master's, Information Security",
+      role: 'National Polytechnic University of Armenia',
+      location: 'Yerevan',
+      period: '2012 — 2018',
+      blurb: '',
+      edu: true,
+    },
+  ],
+
+  skills: [
+    {
+      group: 'Languages',
+      items: ['Swift', 'Objective-C', 'C++', 'Kotlin'],
+    },
+    {
+      group: 'Architecture',
+      items: ['TCA', 'Clean Swift', 'VIPER', 'MVVM', 'MVC'],
+    },
+    {
+      group: 'UI',
+      items: ['SwiftUI', 'UIKit', 'AppKit', 'AsyncDisplayKit'],
+    },
+    {
+      group: 'Reactive',
+      items: ['Combine', 'RxSwift'],
+    },
+    {
+      group: 'Persistence',
+      items: ['SQLiteData', 'GRDB', 'Realm', 'SwiftData', 'CoreData'],
+    },
+    {
+      group: 'Testing',
+      items: ['Swift Testing', 'XCTest', 'UI Testing', 'Snapshot Testing'],
+    },
+    {
+      group: 'Build Systems',
+      items: ['SPM', 'XcodeGen', 'Tuist', 'Bazel', 'CMake'],
+    },
+    {
+      group: 'CI/CD',
+      items: ['Xcode Cloud', 'GitHub Actions', 'Fastlane', 'Bitrise'],
+    },
+    {
+      group: 'Utilities',
+      items: ['XcodeGen', 'Tuist', 'i18n', 'R.swift'],
+    },
+    {
+      group: 'Analytics',
+      items: ['Amplitude', 'Firebase', 'Branch', 'Singular'],
+    },
+    {
+      group: 'AI tooling',
+      items: ['Claude', 'Codex', 'Cursor', 'MCP', 'Agents', 'Commands'],
+    },
+    {
+      group: 'Process',
+      items: ['Agile', 'Scrum', 'Kanban', 'Shape Up (Basecamp)'],
+    },
+  ],
+
+  blogs: [
+    {
+      title: 'Migrating 200k lines from RxSwift to TCA without a rewrite',
+      excerpt: 'How we moved an audiobook app through three architectures in four years, one feature at a time, and lived to tell the tale.',
+      date: 'Mar 2026',
+      readTime: '12 min',
+      tags: ['TCA', 'Architecture', 'Migration'],
+      featured: true,
+    },
+    {
+      title: 'Background downloads that actually resume',
+      excerpt: 'URLSession backgroundSession is fiddly. Here is the state machine I wish someone had shown me before Bokus.',
+      date: 'Jan 2026',
+      readTime: '9 min',
+      tags: ['URLSession', 'Networking'],
+    },
+    {
+      title: 'A reliable audio player in five layers',
+      excerpt: 'AVPlayer, buffering, offline, interruptions, lock-screen. A composition pattern that keeps each concern testable.',
+      date: 'Nov 2025',
+      readTime: '14 min',
+      tags: ['AVFoundation', 'Audio'],
+    },
+    {
+      title: 'KMP from an iOS engineer\u2019s perspective',
+      excerpt: 'What Kotlin Multiplatform gets right, where the Swift bridge bites you, and when it is worth the ceremony.',
+      date: 'Aug 2025',
+      readTime: '8 min',
+      tags: ['KMP', 'Cross-platform'],
+    },
+    {
+      title: 'Snapshot testing without the flake',
+      excerpt: 'Rendering pipelines that survive iOS updates, font shifts, and 13 different device sizes. Mostly.',
+      date: 'May 2025',
+      readTime: '7 min',
+      tags: ['Testing'],
+    },
+    {
+      title: 'Why I keep coming back to Clean Swift',
+      excerpt: 'It is unfashionable, verbose, and quietly the easiest architecture to onboard a junior engineer into. Defending VIP.',
+      date: 'Feb 2025',
+      readTime: '6 min',
+      tags: ['Clean Swift', 'Architecture'],
+    },
+  ],
+
+  openSource: [
+    {
+      title: 'swift-pagination',
+      role: 'Author · Maintainer',
+      blurb: 'A flexible, easy-to-use pagination framework for infinite scrolling, inspired by Texture\u2019s batch-fetching API. Drops into UITableView, UICollectionView, UIScrollView and NSScrollView; vertical + horizontal; iOS & macOS; full Objective-C support.',
+      lang: 'Swift',
+      url: 'https://github.com/grighakobian/swift-pagination',
+      stars: 7,
+      meta: 'Swift 6 · MIT · v1.2.0',
+    },
+    {
+      title: 'swift-toolkit',
+      role: 'Contributor',
+      blurb: 'The open-source toolkit for ebooks, audiobooks and comics in Swift — EPUB, PDF, audiobook navigators, OPDS, and Readium LCP DRM. Contributed fixes while building the Bokus reader on top of it.',
+      lang: 'Swift',
+      url: 'https://github.com/readium/swift-toolkit',
+      stars: '500+',
+      meta: 'BSD-3 · v3.9.0',
+    },
+  ],
+};
