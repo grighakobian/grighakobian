@@ -1034,6 +1034,7 @@ a.hero-meta-item:hover { color: var(--accent); }
   .nav-burger { display: grid; }
   .nav-mobile.open { display: flex; animation: navDrop 220ms var(--ease-ios); }
   .hero { padding: 100px 24px 60px; }
+  .hero-meta { flex-direction: column; gap: 14px; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-portrait { position: static; aspect-ratio: 16/10; }
