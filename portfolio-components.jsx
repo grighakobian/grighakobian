@@ -18,6 +18,8 @@ function Icon({ name, size = 14 }) {
     case 'moon': return <svg {...props}><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>;
     case 'phone': return <svg {...props}><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>;
     case 'sparkle': return <svg {...props}><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>;
+    case 'menu': return <svg {...props}><path d="M4 7h16M4 12h16M4 17h16"/></svg>;
+    case 'close': return <svg {...props}><path d="M6 6l12 12M18 6 6 18"/></svg>;
     default: return null;
   }
 }
@@ -94,12 +96,26 @@ function Nav({ dark, onToggleTheme, onOpenCmdk }) {
     { href: '#skills', label: 'Stack' },
     { href: '#contact', label: 'Contact' },
   ];
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e) => { if (e.key === 'Escape') setMenuOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [menuOpen]);
+
+  const handleNav = (e, href) => {
+    smoothScroll(e, href);
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="nav">
       <div className="nav-spacer" aria-hidden="true"></div>
       <div className="nav-links">
         {links.map(l => (
-          <a key={l.href} href={l.href} className="nav-link" onClick={(e) => smoothScroll(e, l.href)}>{l.label}</a>
+          <a key={l.href} href={l.href} className="nav-link" onClick={(e) => handleNav(e, l.href)}>{l.label}</a>
         ))}
       </div>
       <div className="nav-actions">
@@ -107,6 +123,20 @@ function Nav({ dark, onToggleTheme, onOpenCmdk }) {
         <button className="theme-toggle" onClick={onToggleTheme} title="Toggle theme" aria-label="Toggle theme">
           <Icon name={dark ? 'sun' : 'moon'} size={14} />
         </button>
+        <button
+          className="nav-burger"
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <Icon name={menuOpen ? 'close' : 'menu'} size={18} />
+        </button>
+      </div>
+
+      <div className={`nav-mobile${menuOpen ? ' open' : ''}`}>
+        {links.map(l => (
+          <a key={l.href} href={l.href} className="nav-mobile-link" onClick={(e) => handleNav(e, l.href)}>{l.label}</a>
+        ))}
       </div>
     </nav>
   );
