@@ -124,7 +124,8 @@ body.cursor-on .cursor-glow { opacity: 1; }
   transition: color 180ms, background 180ms;
 }
 .nav-link:hover { color: var(--text); background: var(--border-soft); }
-.nav-actions { display: flex; gap: 8px; align-items: center; justify-self: end; }
+.nav-actions { display: flex; gap: 8px; align-items: center; justify-self: end; grid-column: 3; }
+.nav-spacer { grid-column: 1; justify-self: start; }
 .theme-toggle {
   appearance: none; border: 0; background: var(--border-soft);
   width: 32px; height: 32px; border-radius: 50%;

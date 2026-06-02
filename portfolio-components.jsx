@@ -112,7 +112,16 @@ function Nav({ dark, onToggleTheme, onOpenCmdk }) {
 
   return (
     <nav className="nav">
-      <div className="nav-spacer" aria-hidden="true"></div>
+      <div className="nav-spacer">
+        <button
+          className="nav-burger"
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <Icon name={menuOpen ? 'close' : 'menu'} size={18} />
+        </button>
+      </div>
       <div className="nav-links">
         {links.map(l => (
           <a key={l.href} href={l.href} className="nav-link" onClick={(e) => handleNav(e, l.href)}>{l.label}</a>
@@ -122,14 +131,6 @@ function Nav({ dark, onToggleTheme, onOpenCmdk }) {
         <button className="cmdk-hint" onClick={onOpenCmdk} title="Command palette">⌘ K</button>
         <button className="theme-toggle" onClick={onToggleTheme} title="Toggle theme" aria-label="Toggle theme">
           <Icon name={dark ? 'sun' : 'moon'} size={14} />
-        </button>
-        <button
-          className="nav-burger"
-          onClick={() => setMenuOpen(o => !o)}
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={menuOpen}
-        >
-          <Icon name={menuOpen ? 'close' : 'menu'} size={18} />
         </button>
       </div>
 
