@@ -1045,6 +1045,18 @@ a.hero-meta-item:hover { color: var(--accent); }
   .project-reveal-inner { grid-template-columns: 1fr; gap: 24px; }
   .skills-grid { grid-template-columns: 1fr; }
   .insp-grid { grid-template-columns: 1fr; }
+  .project-shots {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    margin-right: -24px;
+    padding-right: 24px;
+    scrollbar-width: none;
+  }
+  .project-shots::-webkit-scrollbar { display: none; }
+  .project-shots figure { flex: 0 0 auto; scroll-snap-align: start; }
 }
 
 
