@@ -1036,6 +1036,7 @@ a.hero-meta-item:hover { color: var(--accent); }
   .hero { padding: 100px 24px 60px; }
   .hero-meta { gap: 14px 24px; }
   .hero-meta-item:first-child { flex-basis: 100%; }
+  .scroll-cue { position: static; left: auto; bottom: auto; transform: none; margin: 36px auto 0; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-portrait { position: static; aspect-ratio: 16/10; }
