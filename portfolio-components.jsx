@@ -462,7 +462,7 @@ function Footer({ data }) {
           <a href={`mailto:${data.email}`}><Icon name="mail" /> e-mail</a>
         </div>
         <div className="footer-fine">
-          © 2026 · Built with Claude with too much tokens · Press ⌘K for shortcuts
+          © 2026 · Press ⌘K for shortcuts
         </div>
       </div>
     </footer>
