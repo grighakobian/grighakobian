@@ -4,8 +4,6 @@ Senior iOS Engineer with 10+ years of experience building and maintaining apps
 used by millions of people. I enjoy modernizing legacy codebases, designing
 maintainable architectures, and shipping software that's pleasant to use.
 
-Based in Yerevan, Armenia.
-
 ## Technical Focus
 
 - **Languages:** Swift, Objective-C, C++, Kotlin
