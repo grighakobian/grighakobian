@@ -24,7 +24,15 @@ function App() {
 
   // Theme
   React.useEffect(() => {
-    document.documentElement.dataset.theme = t.dark ? 'dark' : 'light';
+    const root = document.documentElement;
+    root.dataset.theme = t.dark ? 'dark' : 'light';
+    // Sync the iOS/WebKit chrome (toolbar + overscroll) with the page bg.
+    const bg = getComputedStyle(root).getPropertyValue('--bg').trim();
+    if (bg) {
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', bg);
+      root.style.backgroundColor = bg;
+    }
   }, [t.dark]);
 
   // Accent
