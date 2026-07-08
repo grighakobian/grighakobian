@@ -18,6 +18,7 @@ function Icon({ name, size = 14 }) {
     case 'moon': return <svg {...props}><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>;
     case 'phone': return <svg {...props}><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>;
     case 'sparkle': return <svg {...props}><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>;
+    case 'download': return <svg {...props}><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>;
     case 'menu': return <svg {...props}><path d="M4 7h16M4 12h16M4 17h16"/></svg>;
     case 'close': return <svg {...props}><path d="M6 6l12 12M18 6 6 18"/></svg>;
     default: return null;
@@ -170,6 +171,12 @@ function Hero({ data }) {
         <a className="hero-meta-item" href={`mailto:${data.email}`}><Icon name="mail" /> e-mail</a>
         <a className="hero-meta-item" href={data.links.github} target="_blank" rel="noopener"><Icon name="github" /> github</a>
         <a className="hero-meta-item" href={data.links.linkedin} target="_blank" rel="noopener"><Icon name="linkedin" /> linkedin</a>
+      </div>
+
+      <div className="hero-cta-row">
+        <a className="hero-cta" href={data.links.cv} download>
+          <Icon name="download" size={16} /> Download CV
+        </a>
       </div>
 
       <div className="hero-stats">
@@ -479,6 +486,7 @@ function CmdK({ open, onClose, data, onToggleTheme }) {
     { id: 'inspiration', label: 'Jump to Inspiration', icon: '↓', kbd: 'I', action: () => jump('#inspiration') },
     { id: 'work', label: 'Jump to Selected Work', icon: '↓', kbd: 'W', action: () => jump('#work') },
     { id: 'skills', label: 'Jump to Stack', icon: '↓', kbd: 'S', action: () => jump('#skills') },
+    { id: 'cv', label: 'Download CV (PDF)', icon: '↓', kbd: 'C', action: () => window.open(data.links.cv, '_blank') },
     { id: 'email', label: `Email ${data.email}`, icon: '✉', kbd: '↵', action: () => location.href = `mailto:${data.email}` },
     { id: 'github', label: 'Open GitHub profile', icon: '↗', kbd: 'G', action: () => window.open(data.links.github, '_blank') },
     { id: 'linkedin', label: 'Open LinkedIn', icon: '↗', kbd: 'L', action: () => window.open(data.links.linkedin, '_blank') },

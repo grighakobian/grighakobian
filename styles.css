@@ -290,6 +290,31 @@ a.hero-meta-item { color: var(--text-dim); text-decoration: none; transition: co
 a.hero-meta-item:hover { color: var(--accent); }
 .hero-meta-item svg { width: 14px; height: 14px; opacity: 0.7; }
 
+/* Hero CTA */
+.hero-cta-row {
+  margin-top: 28px;
+  opacity: 0;
+  animation: heroIn 800ms var(--ease-ios-soft) 560ms forwards;
+}
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  box-shadow: 0 8px 24px var(--accent-glow, rgba(0,0,0,0.2));
+  transition: transform 200ms var(--ease-ios-soft), box-shadow 200ms, opacity 200ms;
+}
+.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 30px var(--accent-glow, rgba(0,0,0,0.28)); }
+.hero-cta:active { transform: translateY(0); }
+.hero-cta svg { width: 16px; height: 16px; opacity: 1; }
+
 /* Hero stats orbit */
 .hero-stats {
   margin-top: 80px;

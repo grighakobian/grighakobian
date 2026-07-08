@@ -10,6 +10,7 @@ window.PORTFOLIO = {
   links: {
     github: 'https://github.com/grighakobian',
     linkedin: 'https://linkedin.com/in/grighakobian',
+    cv: 'assets/grigor-hakobyan-cv.pdf',
   },
   tagline: 'I build polished iOS apps that millions of people actually use.',
   blurb: 'Ten years shipping iOS — from a learning app with 35M users to audiobooks, dating, and everything fiddly in between. I like the boring parts: making legacy code modern, downloads that resume, and players that just work.',
